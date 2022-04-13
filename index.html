@@ -12,9 +12,19 @@
             color: white;
             font-family: 'Courier New', Courier, monospace
         }
+
+        .cursor {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    $ _
+    $ <span class="cursor">_</span>
 </body>
 </html>
